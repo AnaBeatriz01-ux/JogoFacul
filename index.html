@@ -1,74 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de apresentação do jogo Your Art, desenvolvido por uma aluna do curso de Engenharia de Software do Grupo Integrado.">
-    <link rel="stylesheet" href="style.css">
     <title>Your Art</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- MENU FIXO -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#jogo">Jogo</a></li>
+            <li><a href="#sobre">Sobre o Jogo</a></li>
+            <li><a href="#contato">Contatos</a></li>
+        </ul>
+    </nav>
 
-    <header>
-        <h1> Your Art</h1>
-
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre o Jogo</a></li>
-                    <li><a href="#jogo">Jogo</a></li>
-                    <li><a href="#sobre-mim">Sobre Mim</a></li>
-                    <li><a href="#personagens">Personagens</a></li>
-                    <li><a href="https://www.grupointegrado.br">Grupo Integrado</a></li>
-                
-                </ul>
-            </nav>
-    </header>
-    
-    <main>
-        <section id="sobre"></section>
-          <h2> Seja bem-vindo ao jogo ''Your Art'' </h2>
-
-          <div class="grid">
-            <a href="#sobre" title="Sobre O Jogo"></a>
-               <p>Your Art é um jogo criado como um projeto do curso de Engenharia de Software do Grupo Integrado.
-                 Todos os seus conteúdos foram pegos de sites gratuitos na internet.</p>
-          </div>
-
-          <div class="coluna">
-             <img src="tile001.png" alt="foto de uma raposa">
-             <div class="texto">
-             <p> Durante o jogo você assume a posição de uma raposinha artista que deseja ser reconhecida pela vizinhança.<br>
-              Para isso, ela resolveu espalhar os seus desenhos em todos os 6 quadros de avisos que existem na vizinhança.</p>
-          </div>
-
-        
-</main>
-
-<main>
-
-<div class="jogo">
-    <a href="#jogo" title="O Jogo"></a>
-</div>
-    <section id="jogo">
-
-
-
+    <!-- SEÇÃO HOME -->
+    <section id="home" class="sec-home">
+        <div class="conteudo">
+            <div class="emoji-grande">🦊</div>
+            <h1>Your Art</h1>
+            <p class="subtitulo">Um jogo sobre uma raposa que deseja ser reconhecida por sua arte</p>
+            <p class="descricao">
+               Seja bem-vindo ao site oficial de <strong>Your Art</strong>! Um jogo criado como um projeto do curso de Engenharia de Software <br>
+               da faculdade Integrado. Aqui você vai conhecer o jogo,<br>
+                minha jornada como desenvolvedora e como entrar em contato. Espero que goste! 🎨
+            </p>
+            <!-- BOTÃO PRINCIPAL LARANJA -->
+            <a href="#jogo" class="btn-principal">O Jogo</a>
+        </div>
     </section>
 
-    <section id="personagens">
-<div class="#personagens">
-    <a href="#personagens" title="Personagens"></a>
-    <section id="personagens">
-    <p> O personagem principal é uma raposinha chamada Artie, que é uma artista talentosa e ambiciosa. <br>
-        Seu objetivo é ser reconhecida pela sua vizinhança como uma artista brilhante.</p>
+    <!-- SEÇÃO JOGO -->
+    <section id="jogo" class="sec-jogo">
+        <div class="conteudo">
+            <h2> O Jogo</h2>
+            
+            <div class="box-destaque">
+                <div class="emoji-medio">🦊</div>
+                <p><em>(Screenshot do jogo virá aqui!)</em></p>
+            </div>
+
+            <p class="texto-centro">
+                <strong>Your Art</strong> é um jogo indie onde você controla uma raposa 
+                que sonha em ser artista famosa. Para isso, ela resolveu colocar seus desenhos nos quadros de avisos da região<br>
+                junto com dicas de fundamentos de arte para que as pessoas possam ver seu talento.
+            </p>
+
+            <div class="botoes-centro">
+                <!-- BOTÃO JOGAR ESPECIAL LARANJA -->
+                <a href="#" class="btn-jogar">Jogar Agora</a>
+            </div>
+        </div>
     </section>
-</div>
-</main>
- 
-<footer> 
+
+    <!-- SEÇÃO SOBRE O JOGO -->
+    <section id="sobre" class="SEC-sobre">
+        <div class="conteudo">
+            <h2> Sobre o Jogo</h2>
+
+            <div class="perfil-box">
+                <h3>Desenvolvedora</h3>
+                <p>
+                   Meu nome é Ana Beatriz Pacheco Correia, tenho 19 anos, estou no primeiro período de Engenharia de Software.<br>
                 
-</footer>
+                </p>
+            </div>
+
+
+            <div class="box-mensagem">
+                <h3>Your Art</h3>
+                <p>
+                   Your Art é um jogo sobre uma raposa que deseja ser reconhecida como uma artista renomada. Para isso, ela resolve espalhar seus desenhos e estudos pelos 6 quadros de avisos da região.<br>
+                    É um jogo simples e rápido, mas com um objetivo claro.
+                </p>
+            </div>
+
+            
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="sec-contato">
+        <div class="conteudo">
+          
+
+            <h3>Envie uma mensagem</h3>
+            
+            <form class="form-simples">
+                <div class="campo">
+                    <label>Seu nome:</label>
+                    <input type="text" placeholder="Digite seu nome">
+                </div>
+
+                <div class="campo">
+                    <label>Seu email:</label>
+                    <input type="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="campo">
+                    <label>Assunto:</label>
+                    <select>
+                        <option>Sugestão</option>
+                        <option>Bug</option>
+                        <option>Parceria</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Mensagem:</label>
+                    <textarea rows="4" placeholder="Escreva aqui..."></textarea>
+                </div>
+
+                <div class="botoes-centro">
+                    <!-- BOTÃO ENVIAR LARANJA -->
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>Feito por Ana Beatriz Pacheco Correia</p>
+        <p><a href="#home" class="link-topo">↑ Voltar ao topo</a></p>
+    </footer>
+
 </body>
 </html>
