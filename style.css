@@ -44,12 +44,14 @@
         background-color: #8A9A5B;
         padding: 15px;
         text-align: center;
+        z-index: 6;
     }
 
     nav ul {
         list-style: none;
         margin: 0;
         padding: 0;
+        z-index: 6;
     }
 
     nav li {
