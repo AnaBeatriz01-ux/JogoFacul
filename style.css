@@ -156,6 +156,9 @@
         font-weight: bold;
         border-radius: 25px;
         display: inline-block;
+        margin-top: -300px ;
+        position: relative;
+        z-index: 5;
     }
 
     .btn-jogar:hover {
@@ -264,6 +267,81 @@
         background-color: #BC6C25;
     }
 
+    /* --- AJUSTE DOS BOTÕES NO MODO ESCURO --- */
+
+.dark-theme .btn-principal, 
+.dark-theme .btn-jogar,
+.dark-theme .btn {
+    background-color: #CC664D ;
+    color: #FFFFFF ;
+    border: none;
+}
+
+.dark-theme .btn-principal:hover, 
+.dark-theme .btn-jogar:hover,
+.dark-theme .btn:hover {
+    background-color: #A64D38 ;
+    box-shadow: 0 0 10px rgba(224, 122, 95, 0.3); 
+}
+
+.dark-theme nav a:hover {
+    color: #CC664D ;
+}
+
+/* --- BOTÃO DE TEMA REESTRUTURADO --- */
+#btn-tema {
+    position: fixed;
+    top: 20px; /* Diminuí para subir o botão (estava 80px) */
+    right: 20px; /* Mantém na direita */
+    z-index: 10000; /* Garante que fique acima de tudo */
+    
+    /* Aumentando o tamanho */
+    padding: 15px 30px; 
+    font-size: 18px; 
+    
+    background-color: #E07A5F;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Deixa ele mais arredondado e moderno */
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+#btn-tema:hover {
+    background-color: #BC6C25;
+    transform: scale(1.1); /* Aumenta um pouco quando passa o mouse */
+}
+
+body.dark-theme {
+    background-color: #121212 ;
+    color: #E0E0E0 ;
+}
+
+.dark-theme .sec-home, 
+.dark-theme .SEC-sobre,
+.dark-theme .sec-contato {
+    background-color: #1A1A1A ;
+}
+
+.dark-theme .sec-jogo, 
+.dark-theme .perfil-box, 
+.dark-theme .form-simples {
+    background-color: #242424 ;
+    color: white ;
+}
+
+.dark-theme h1, 
+.dark-theme h2,
+.dark-theme .perfil-box h3 {
+    color: #A3B18A ; 
+}
+
+.dark-theme #btn-tema {
+    background-color: #588157; 
+}
+
     /* footer */
     footer {
         background-color: #3D405B;
@@ -281,3 +359,12 @@
     .link-topo:hover {
         color: white;
     }
+
+    /* Ajuste para não cobrir o conteúdo em telas pequenas */
+@media (max-width: 768px) {
+    #btn-tema {
+        padding: 10px 20px;
+        font-size: 14px;
+        top: 10px;
+    }
+}

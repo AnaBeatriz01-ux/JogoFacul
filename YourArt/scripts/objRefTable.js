@@ -1,0 +1,68 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.TiledBg,
+		C3.Behaviors.Anchor,
+		C3.Plugins.Sprite,
+		C3.Behaviors.solid,
+		C3.Behaviors.bound,
+		C3.Behaviors.scrollto,
+		C3.Behaviors.Platform,
+		C3.Plugins.Audio,
+		C3.Plugins.Keyboard,
+		C3.Plugins.Text,
+		C3.Plugins.Mouse,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.Keyboard.Cnds.IsKeyDown,
+		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.Sprite.Acts.SetMirrored,
+		C3.Plugins.Keyboard.Cnds.OnKeyReleased,
+		C3.Plugins.Keyboard.Cnds.OnKey,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.Sprite.Acts.SetPos,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.JavaScriptInEvents.FolhaDeEventos1_Event7_Act1
+	];
+};
+self.C3_JsPropNameTable = [
+	{Âncora: 0},
+	{vilabackground: 0},
+	{Sólido: 0},
+	{agua: 0},
+	{bloco1: 0},
+	{bloco2: 0},
+	{bloco3: 0},
+	{quadrodeavisos: 0},
+	{RestritoAoLayout: 0},
+	{CentrarEm: 0},
+	{Plataforma: 0},
+	{raposa: 0},
+	{Áudio: 0},
+	{Teclado: 0},
+	{desenhos: 0},
+	{numeros: 0},
+	{Mouse: 0},
+	{bafundamento01: 0},
+	{Sprite: 0},
+	{balaodefala: 0},
+	{contadorConclusao: 0}
+];
+
+self.InstanceType = {
+	vilabackground: class extends self.ITiledBackgroundInstance {},
+	agua: class extends self.ISpriteInstance {},
+	bloco1: class extends self.ISpriteInstance {},
+	bloco2: class extends self.ISpriteInstance {},
+	bloco3: class extends self.ISpriteInstance {},
+	quadrodeavisos: class extends self.ISpriteInstance {},
+	raposa: class extends self.ISpriteInstance {},
+	Áudio: class extends self.IInstance {},
+	Teclado: class extends self.IInstance {},
+	desenhos: class extends self.ISpriteInstance {},
+	numeros: class extends self.ITextInstance {},
+	Mouse: class extends self.IInstance {},
+	bafundamento01: class extends self.ITextInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	balaodefala: class extends self.ISpriteInstance {}
+}
