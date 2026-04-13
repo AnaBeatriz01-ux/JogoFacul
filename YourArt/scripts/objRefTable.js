@@ -12,6 +12,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Keyboard,
 		C3.Plugins.Text,
 		C3.Plugins.Mouse,
+		C3.Plugins.Spritefont2,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
@@ -22,7 +23,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
-		C3.JavaScriptInEvents.FolhaDeEventos1_Event7_Act1
+		C3.JavaScriptInEvents.FolhaDeEventos1_Event7_Act1,
+		C3.Plugins.System.Acts.GoToLayout
 	];
 };
 self.C3_JsPropNameTable = [
@@ -46,6 +48,9 @@ self.C3_JsPropNameTable = [
 	{bafundamento01: 0},
 	{Sprite: 0},
 	{balaodefala: 0},
+	{PlanoDeFundoEmBlocos: 0},
+	{FonteDeSprites: 0},
+	{FonteDeSprites2: 0},
 	{contadorConclusao: 0}
 ];
 
@@ -64,5 +69,8 @@ self.InstanceType = {
 	Mouse: class extends self.IInstance {},
 	bafundamento01: class extends self.ITextInstance {},
 	Sprite: class extends self.ISpriteInstance {},
-	balaodefala: class extends self.ISpriteInstance {}
+	balaodefala: class extends self.ISpriteInstance {},
+	PlanoDeFundoEmBlocos: class extends self.ITiledBackgroundInstance {},
+	FonteDeSprites: class extends self.ISpriteFontInstance {},
+	FonteDeSprites2: class extends self.ISpriteFontInstance {}
 }
